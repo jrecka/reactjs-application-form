@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RemindMe from './RemindMe/RemindMe.jsx'
+import ApplicationForm from './ApplicationForm/ApplicationForm.jsx'
 
 export default class App extends React.Component {
  
