@@ -5,6 +5,11 @@ module.exports = {
         filename: "out.js",
         path: path.resolve(__dirname, "js")
     },
+    devServer: {
+        inline: true,
+        contentBase: './',
+        port: 3001
+    },
      resolve: {
         extensions: ['.js', '.jsx']
     },

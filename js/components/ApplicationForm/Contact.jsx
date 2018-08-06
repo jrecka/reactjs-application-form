@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter, Route, Link, Switch, NavLink,} from 'react-router-dom';
+
 
 export default class Contact extends React.Component{
     constructor(props) {
@@ -96,7 +98,7 @@ export default class Contact extends React.Component{
                         <input type="email" className="form-control" name="email" placeholder="email" onChange={this.handleChange}/>
                     </div>
                 </form>
-                <button onClick={this.handleClick}>click me</button>
+                <Link to="/addPhoto">--></Link>
             </div>
 
         )

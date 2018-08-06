@@ -54,60 +54,56 @@ export default class ApplicantData extends React.Component{
             </div>
             <div className="form-group">
               <label>
-                  ID:
+                  ID
               </label>
                 <input name="pesel" className='form-control' type='text' onChange={this.handleChange} placeholder="Social Security numbers"></input>
             </div>
             <div className="form-group">
               <label>
-                  Name:
+                  Name
               </label>
               <input name="name" className='form-control' type='text' onChange={this.handleChange} placeholder="Name"></input>
             </div>
             <div className="form-group">
               <label>
-                  Last name:
+                  Last name
               </label>
               <input name="lastName" className='form-control' type='text' onChange={this.handleChange} placeholder="Last name"></input>
             </div>
             <div className="form-group">
               <label>
-                  Family name:
+                  Family name
               </label>
                 <input name="familyName" className='form-control' type='text' onChange={this.handleChange} placeholder="Family name"></input>
             </div>
             <div className="form-group">
               <label>
-                  Date of birth:
+                  Date of birth
               </label>
               <input name="dateOfBirth" className='form-control' type='date' onChange={this.handleChange}></input>
             </div>
             <div className="form-group">
                 <label>
-                    Birthpalce:
+                    Birthpalce
                 </label>
                 <input name="birthpalce" className='form-control' type='text' onChange={this.handleChange} placeholder="Birthplace"></input>
             </div>
             <div className="form-group">
               <label>
-                  Nationality:
+                  Nationality
               </label>
               <input name="nationality" className='form-control' type='text' onChange={this.handleChange} placeholder="Family name"></input>
             </div>
-            <div className="form-check">
-              <div>
-                  Sex:
-              </div>
-              <input name="sex" className="form-check-input" type="checkbox" onChange={this.handleChange} value="female" />
-              <label className="form-check-label">
-                 Female
-              </label>
-            </div>
-            <div className="form-check">
-             <input name="sex" className="form-check-input" type="checkbox" onChange={this.handleChange} value="male"/>
-             <label className="form-check-label">
-                 Male
-             </label>
+            <div className="form-group">
+                <label>
+                    Sex
+                </label>
+                <select name="sex"
+                        className="form-control"
+                        value={this.state.sex}
+                        onChange={this.handleChange}>
+                    {this.props.options.map( (option,i) => <option key={i} value={option}>{option}</option>)}
+                </select>
             </div>
             <div>
                 Parents data
@@ -131,7 +127,7 @@ export default class ApplicantData extends React.Component{
              <input name="maidenName" className='form-control' type="text" onChange={this.handleChange} placeholder="mother's maiden name"/>
             </div>
            </form>
-            <button onClick={this.handleClick}></button>
+            {/*<button onClick={this.handleClick}></button>*/}
 
 
         </div>)

@@ -21,17 +21,17 @@ export default class Signature extends React.Component{
 
 
 
- InitThis = () =>{
+ InitThis = (e) =>{
         ctx = document.getElementById('myCanvas').getContext("2d");
 
         ctx.mousedown(function (e) {
             mousePressed = true;
-            Draw(e.pageX - this.offset.left, e.pageY - this.offSet.top, false);
+            Draw(e.pageX - e.offset.left, e.pageY - e.offSet.top, false);
         });
 
         ctx.mousemover(e => {
             if (mousePressed) {
-                Draw(e.pageX - this.offset().left, e.pageY - this.offSet.top, true);
+                Draw(e.pageX - e.offset().left, e.pageY - e.offSet.top, true);
             }
         });
 

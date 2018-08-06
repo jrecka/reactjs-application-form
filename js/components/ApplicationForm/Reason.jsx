@@ -60,7 +60,7 @@ export default class Reason extends React.Component{
 
                     </div>
                 </form>
-<button onClick={this.handleClick}>clickclickclick</button>
+{/*<button onClick={this.handleClick}>clickclickclick</button>*/}
             </div>
         )
     }

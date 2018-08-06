@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+body {
+    background-image: url("https://images.pexels.com/photos/965121/pexels-photo-965121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 .id-photo {
     width: 160px;
@@ -12,4 +18,13 @@
 
 .show-or-hide{
     display:none;
+}
+
+.active-link {
+    color: blue;
+}
+
+.application-form {
+    width: 25rem;
+    background-color: rgb(171, 213, 203, .2);
 }
