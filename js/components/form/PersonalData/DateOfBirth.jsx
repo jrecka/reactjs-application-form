@@ -13,13 +13,9 @@ export default class DateOfBirth extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         })
+        localStorage.setItem("dateOfBirth", this.state.dateOfBirth)
     }
 
-    handleClick = () => {
-
-        const personalData = {
-                console.log(this.state.dateOfBirth);
-    }
     render(){
         return(
             <div className="row">

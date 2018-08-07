@@ -13,6 +13,7 @@ export default class BrithPlace extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         })
+        localStorage.setItem("birthplace", this.state.birthplace);
     }
 
     handleClick = () => {

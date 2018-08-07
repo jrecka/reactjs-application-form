@@ -15,6 +15,7 @@ export default class Surname extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         })
+        localStorage.setItem("surname", this.state.surname);
     }
 
     handleClick = () => {

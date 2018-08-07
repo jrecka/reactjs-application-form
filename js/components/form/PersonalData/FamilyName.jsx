@@ -13,6 +13,7 @@ export default class FamilyName extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         })
+        localStorage.setItem("familyName", this.state.familyName);
     }
 
     handleClick = () => {
@@ -38,7 +39,6 @@ export default class FamilyName extends React.Component{
 
                     </div>
                 </form>
-                {/*<button onClick={this.handleClick}></button>*/}
             </div>
         )
     }

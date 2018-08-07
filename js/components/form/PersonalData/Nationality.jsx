@@ -14,11 +14,9 @@ export default class Nationality extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         })
+        localStorage.setItem("nationality", this.state.nationality);
     }
 
-    handleClick = () => {
-            console.log(this.state.nationality);
-    }
     render(){
         return(
             <div className="row">
@@ -36,7 +34,7 @@ export default class Nationality extends React.Component{
                         </input>
                     </div>
                 </form>
-                {/*<button onClick={this.handleClick}></button>*/}
-            </div>)
+            </div>
+        )
     }
 }

@@ -13,6 +13,7 @@ export default class Name extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         })
+        localStorage.setItem("name", this.state.name);
 
     }
 

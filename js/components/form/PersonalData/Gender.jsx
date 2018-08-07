@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Sex extends React.Component{
+export default class Gender extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -13,14 +13,9 @@ export default class Sex extends React.Component{
         this.setState({
             gender: e.target.value
         })
+        localStorage.setItem("gender", this.state.gender)
     }
 
-    handleClick = () => {
-
-        const personalData = {
-
-        console.log(this.state.gender);
-    }
     render(){
         return(
             <div className="row">
@@ -38,7 +33,6 @@ export default class Sex extends React.Component{
                         </select>
                     </div>
                 </form>
-                {/*<button onClick={this.handleClick}></button>*/}
             </div>)
     }
 }

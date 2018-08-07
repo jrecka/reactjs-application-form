@@ -13,6 +13,7 @@ export default class Pesel extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         })
+        localStorage.setItem("pesel", this.state.pesel);
     }
 
     handleClick = () => {

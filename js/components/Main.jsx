@@ -17,7 +17,7 @@ export default class Main extends React.Component{
                         </h1>
                         <Link
                             to="/applicationForm"
-                            className="form-background">
+                            className="form-background-main">
                             <span>
                                 Fill out the application
                             </span>
