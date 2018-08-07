@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Declatarion extends React.Component{
+export default class PlaceOfApplication extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            city: '',
-            date: '',
+            placeOfApplication: '',
         }
     }
 
@@ -18,12 +17,11 @@ export default class Declatarion extends React.Component{
 
     showData = () => {
         const dataObj = {
-            city: this.state.city,
-            date: this.state.date
+            city: this.state.placeOfApplication,
         }
 
-        console.log(dataObj)
-    }
+        console.log(dataObj);
+
 
     render(){
         return(
@@ -32,15 +30,8 @@ export default class Declatarion extends React.Component{
                     <div className="form-group">
                         <label>
                             City
-
                         </label>
-                        <input className="form-control" type="text" name="city" onChange={this.handleChange}/>
-                    </div>
-                    <div className="form-group">
-                        <label>
-                            Date
-                        </label>
-                        <input className="form-control" type="date" name="date" onChange={this.handleChange}/>
+                        <input className="form-control" type="text" name="placeOfApplication" onChange={this.handleChange}/>
                     </div>
                 </form>
                 {/*<button className="btn"  onClick={this.showData}></button>*/}

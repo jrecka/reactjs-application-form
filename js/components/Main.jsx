@@ -9,11 +9,21 @@ export default class Main extends React.Component{
     }
     render(){
         return(
-            <div>
-                <h1>
-                    ID card
-                </h1>
-                <Link to="/applicationForm">ID card request</Link>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12 main-style">
+                        <h1 className="main-headline">
+                            ID card application
+                        </h1>
+                        <Link
+                            to="/applicationForm"
+                            className="form-background">
+                            <span>
+                                Fill out the application
+                            </span>
+                        </Link>
+                    </div>
+                </div>
             </div>
         )}
 }

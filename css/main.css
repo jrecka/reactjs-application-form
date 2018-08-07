@@ -1,16 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Lora|Modern+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Lora|Modern+Antiqua');
+
 * {
-    font-family: 'Roboto', sans-serif;
+   font-family: 'Lora', serif;;
     margin: 0;
     padding: 0;
 }
 
 body {
     background-image: url("https://images.pexels.com/photos/965121/pexels-photo-965121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
 
+.main-style{
+    text-align: center;
+}
+.main-headline{
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
 
+
+}
+
+.form-background {
+    background-color: #ffec0773;
+    margin-top: 3rem;
+    padding: 5rem;
+    border-radius: 10px;
+    box-shadow: 1px 6px 37px 10px #888888;
+}
+
+.form-background>span {
+    font-family: 'Lobster', cursive;
+    color: #c9446f;
+    font-size: 40px;
+
+
+}
 .id-photo {
     width: 160px;
     height: 190px;
@@ -24,7 +54,7 @@ body {
     color: blue;
 }
 
-.application-form {
-    width: 25rem;
-    background-color: rgb(171, 213, 203, .2);
-}
+/*.application-form {*/
+    /*width: 25rem;*/
+    /*background-color: rgb(171, 213, 203, .2);*/
+/*}*/
